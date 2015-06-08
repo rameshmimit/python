@@ -9,11 +9,11 @@
 # Requires: see Modulefile
 #
 # Sample Usage:
-# include python 
+# include python
 # or
 # class { python:
 #   install_dir => '/opt/',
-#   version     => '2.7.6',     
+#   version     => '2.7.6',
 # }
 #
 class python (
@@ -29,7 +29,7 @@ class python (
     cwd     => $install_dir,
     path    => $path,
     unless  => "test [ ! '/usr/local/bin/python' -eq $version ]",
-    command => "wget "$source_url/$version/$package_base_name-$version.tar.xz -O $package_base_name-$version.tar.xz"",
+    command => "wget $source_url/$version/$package_base_name-$version.tar.xz -O $package_base_name-$version.tar.xz",
     creates => "$install_dir/$package_base_name-$version.tar.xz",
     require => File[$install_dir],
     }
