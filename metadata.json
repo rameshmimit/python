@@ -1,0 +1,13 @@
+{
+  "author": "Ramesh Kumar",
+  "dependencies": [],
+  "license": "Apache License, Version 2.0",
+  "name": "ramesh-python",
+  "operatingsystem_support": ["Redhat", "CentOS"],
+  "project_page": "http://github.com/rameshmimit/python",
+  "requirements": [],
+  "source": "http://github.com/rameshmimit/python.git",
+  "summary": "Python Module for Quad Specific environment only",
+  "tags": ["python"],
+  "version": "0.1.0"
+}
